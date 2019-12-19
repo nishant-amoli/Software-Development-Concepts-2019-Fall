@@ -1,0 +1,61 @@
+
+Overview
+--------
+
+This program allows the user to add data into the map and 
+provides useful information after applying the operation on
+the given data.
+
+The functionalities of this program include:
+
+- Reading data in the form of coordinates
+- Allowing the user to create edges between
+  different points of the map
+- Taking the points as the input, finding the shortest distance
+  between those two points, and printing the sequential
+  coordinates from the initial point to the   destination point
+
+Data Structure
+--------------
+The program stores the coordinates of a point as an object.
+All the objects, containing the coordinates are stored in an array
+list. The details about the neighboring vertices of the map
+are stored and represented as an adjacency list. To create the
+adjacency list, hashmap is being used. The key of the map is the
+name given to a point(an object containing the coordinates) based
+on its index in the array list, and the list containing all the 
+neighbors of the vertex is stored as the value.
+
+Method Description
+------------------
+
+newIntersection -- Accepts new coordinates from the user and store
+                   them. This method just add the new points into
+                   the cartesian system and has nothing to do with
+                   their connectivity. The method returns "true" 
+                   if the intersection is added and "false" if the
+                   intersection was already present in the map.
+           
+defineRoad -- Accepts the coordinates of the two vertices and 
+              connects them. Returns "true" if the road if the 
+              vertices have been connected by an edge, and "false"
+              if the road was constructed before.
+
+navigate --  Accepts the coordinates of two points present on the map,
+             one is the current location and other being the 
+             destination finds the shortest distance between those
+             two points, and print the sequential coordinates from
+             the source to the destination.
+
+Assumptions
+-----------
+
+- The graph has no negative weights.
+- The coordinates are only added in the form of integer, and not string.
+
+Restrictions
+------------
+- The graph can not be made undirected.
+- No parallel nodes can be added to the graph.
+- The mathematical value of the distance between two vertices is stored
+  in the form of an integer, and so is approximate, not absolute.
