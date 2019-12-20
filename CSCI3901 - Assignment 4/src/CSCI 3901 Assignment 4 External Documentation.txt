@@ -1,0 +1,129 @@
+
+Overview
+--------
+
+This program takes the puzzle information from the user in a buffer,
+stores it into a data structure, and transforms it in order to find the
+unique solution.
+
+The functionalities of this program include:
+
+- Reading puzzle data from the buffer
+- Completing the puzzle and providing the solution
+
+Various versions and upgrades
+-----------------------------
+v01 - this version of code only loads the puzzle data from the buffer
+v02 - this version of the code provides the solve method
+v03 - this version provides the code to print the solution onto the stream
+v04 - this version of the code provides the number of choices and guesses
+      that were made while trying to find the solution
+v05 - the final version contains a well documented code, also a major
+      error is resolved and the invalid handles are taken care of
+
+Data Structure
+--------------
+To represent the puzzle, a two dimensional array is used.
+The program stores the first line of the buffer, that is, number of
+columns and rows, and the total number of words in the puzzle in
+separate variables of type integer. The second part of the buffer,
+that is the grid indices in the array, the length of word it can hold,
+and its direction (top to down, or left to right), a class object is
+used, containing three integers and one string field. These objects
+are then stored into a HashMap with the sequence of the grid as the
+key. The words are stored inside an array of type String.
+Another HashMap is used for memoization, that is, to store all the
+bad choices that have been made before, so that they won't be
+repeated.
+
+Working
+-------
+Since this is a problem where a number of choices and guesses have
+to be made before making right decisions for the solution,
+backtracking algorithmic technique has been used. In order to
+make sure that the same bad decisions can be avoided in the future,
+memoization table has been created.
+
+Steps followed:
+Step 1: Start with the first grid and the first word.
+
+Step 2: Try to place the word into the grid. If the word is
+placed successfully, it means that it is either the solution for
+that grid of just an option that is currently plausible.
+
+Step 3: Move to the next grid with the next word and try to fill
+the word in that grid. If this happens, continue this process.
+
+Step 4: If the word's length is not equal to the length of the
+grid, change the word. To do that that programmatically, the array
+has been rotated from that particular index only and not from the
+beginning so that the words that are already filled remain unchanged.  
+
+Step 5:If the word's length is equal to the length of the grid, try
+to place the word, if the word is placed successfully, repeat Step 3.
+If not, that means there is an overlap, change the word and rotate the
+array.
+
+Note: While rotating the array, a memoization list is being maintained
+and the word choices that have been made previously and were unsuccessful
+are being added to the list so that the try and rotate method will not be
+used infinitely.
+
+Step 6: If none of the words seem to be suitable for the grid, this means
+that a wrong word has been placed in a grid at lower level. Backtrack to
+the lower level and change the word placed in that grid with a different
+one. Go to Step 3.
+
+Note: Before placing the different word, add the wrongly placed word into
+the list that is associated to that grid number in the HashMap used for
+memoization, so that this bad choice will not be made again.
+
+Step 7: Repeat this process until all the words are successfully placed
+in the right place.
+
+Method Description
+------------------
+
+loadPuzzle --  This method accepts the description of the puzzle
+           as a buffer stream and parses it to get all the information,
+           and then stores that information into various data structures.
+           
+solve -- This method is just a wrapper method that invokes solvePuzzle method
+         to transform the data and finds the solution of the puzzle.
+
+print -- This method prints the solution of the puzzle into the output stream.
+
+choices -- This method returns the number of choices made and the number of
+           times backtracking was done.
+    
+initializePuzzleState -- This method initializes the space state of the puzzle
+                         grid with '0'.
+
+changePuzzleState --  This method changes the state of blocks that will contain
+                      the alphabets to '1'.
+
+checkGridState -- This method checks whether or not the grid contains a word.
+
+fillIn -- This method accepts the grid index as the map key, and word index
+          of the string array, and fills the word into the grid.
+
+solvePuzzle -- This method transforms the puzzle and store the solution.
+           The method accepts the grid index and the index of the word
+               array.
+
+displayLoadedPuzzle -- This method displays the state space after the puzzle
+                       is loaded into the data structure.
+
+displaySolvedPuzzle -- This method displays the state space after the puzzle
+                       is successfully solved.
+
+rotateWordArray -- This method rotates the state of the array from the given
+                   index so that the previously made bad choices can be pushed
+               to the end of the array.
+
+
+Assumptions
+-----------
+
+- There are no redundant words in the puzzle.
+- The characters are case insensitive.
