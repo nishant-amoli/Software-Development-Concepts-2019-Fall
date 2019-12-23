@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<year_end_summary>
+    <year>
+        <start_date>2003-02-12</start_date>
+        <end_date>2003-02-19</end_date>
+    </year>
+    <customer_list>
+        <customer>
+            <customer_name>Rovelli Gifts</customer_name>
+            <address>
+                <street_address>Via Ludovico il Moro 22</street_address>
+                <city>Bergamo</city>
+                <postal_code>24100</postal_code>
+                <country>Italy</country>
+            </address>
+            <num_orders>1</num_orders>
+            <order_value>52151.81</order_value>
+        </customer>
+    </customer_list>
+    <product_list>
+        <product_set>
+            <product_line_name>Vintage Cars</product_line_name>
+            <product>
+                <product_name>1941 Chevrolet Special Deluxe Cabriolet</product_name>
+                <product_vendor>Exoto Designs</product_vendor>
+                <units_sold>41</units_sold>
+                <total_sales>3863.02</total_sales>
+            </product>
+            <product>
+                <product_name>1937 Horch 930V Limousine</product_name>
+                <product_vendor>Autoart Studio Design</product_vendor>
+                <units_sold>31</units_sold>
+                <total_sales>1732.59</total_sales>
+            </product>
+            <product>
+                <product_name>1928 Ford Phaeton Deluxe</product_name>
+                <product_vendor>Highway 66 Mini Classics</product_vendor>
+                <units_sold>33</units_sold>
+                <total_sales>2156.55</total_sales>
+            </product>
+            <product>
+                <product_name>1930 Buick Marquette Phaeton</product_name>
+                <product_vendor>Studio M Art Models</product_vendor>
+                <units_sold>39</units_sold>
+                <total_sales>1395.42</total_sales>
+            </product>
+        </product_set>
+        <product_set>
+            <product_line_name>Planes</product_line_name>
+            <product>
+                <product_name>1980s Black Hawk Helicopter</product_name>
+                <product_vendor>Red Start Diecast</product_vendor>
+                <units_sold>36</units_sold>
+                <total_sales>4825.44</total_sales>
+            </product>
+            <product>
+                <product_name>P-51-D Mustang</product_name>
+                <product_vendor>Gearbox Collectibles</product_vendor>
+                <units_sold>34</units_sold>
+                <total_sales>2757.4</total_sales>
+            </product>
+            <product>
+                <product_name>1928 British Royal Navy Airplane</product_name>
+                <product_vendor>Classic Metal Creations</product_vendor>
+                <units_sold>28</units_sold>
+                <total_sales>3002.44</total_sales>
+            </product>
+            <product>
+                <product_name>1900s Vintage Bi-Plane</product_name>
+                <product_vendor>Autoart Studio Design</product_vendor>
+                <units_sold>49</units_sold>
+                <total_sales>3222.73</total_sales>
+            </product>
+            <product>
+                <product_name>Corsair F4U ( Bird Cage)</product_name>
+                <product_vendor>Second Gear Diecast</product_vendor>
+                <units_sold>50</units_sold>
+                <total_sales>2798.0</total_sales>
+            </product>
+            <product>
+                <product_name>1900s Vintage Tri-Plane</product_name>
+                <product_vendor>Unimax Art Galleries</product_vendor>
+                <units_sold>26</units_sold>
+                <total_sales>1846.0</total_sales>
+            </product>
+            <product>
+                <product_name>American Airlines: B767-300</product_name>
+                <product_vendor>Min Lin Diecast</product_vendor>
+                <units_sold>31</units_sold>
+                <total_sales>2831.54</total_sales>
+            </product>
+            <product>
+                <product_name>America West Airlines B757-200</product_name>
+                <product_vendor>Motor City Art Classics</product_vendor>
+                <units_sold>34</units_sold>
+                <total_sales>3390.48</total_sales>
+            </product>
+            <product>
+                <product_name>ATA: B757-300</product_name>
+                <product_vendor>Highway 66 Mini Classics</product_vendor>
+                <units_sold>32</units_sold>
+                <total_sales>3644.8</total_sales>
+            </product>
+            <product>
+                <product_name>F/A 18 Hornet 1/72</product_name>
+                <product_vendor>Motor City Art Classics</product_vendor>
+                <units_sold>44</units_sold>
+                <total_sales>3344.0</total_sales>
+            </product>
+            <product>
+                <product_name>American Airlines: MD-11S</product_name>
+                <product_vendor>Second Gear Diecast</product_vendor>
+                <units_sold>48</units_sold>
+                <total_sales>3375.84</total_sales>
+            </product>
+            <product>
+                <product_name>Boeing X-32A JSF</product_name>
+                <product_vendor>Motor City Art Classics</product_vendor>
+                <units_sold>48</units_sold>
+                <total_sales>2097.6</total_sales>
+            </product>
+        </product_set>
+        <product_set>
+            <product_line_name>Ships</product_line_name>
+            <product>
+                <product_name>1999 Yamaha Speed Boat</product_name>
+                <product_vendor>Min Lin Diecast</product_vendor>
+                <units_sold>41</units_sold>
+                <total_sales>3315.26</total_sales>
+            </product>
+            <product>
+                <product_name>HMS Bounty</product_name>
+                <product_vendor>Unimax Art Galleries</product_vendor>
+                <units_sold>30</units_sold>
+                <total_sales>2552.7</total_sales>
+            </product>
+        </product_set>
+    </product_list>
+    <staff_list>
+        <employee>
+            <first_name>Pamela</first_name>
+            <last_name>Castillo</last_name>
+            <office_city>Paris</office_city>
+            <active_customers>1</active_customers>
+            <total_sales>52151.81</total_sales>
+        </employee>
+    </staff_list>
+</year_end_summary>
