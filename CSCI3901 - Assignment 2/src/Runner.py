@@ -1,0 +1,11 @@
+from ListHierarchy import ListHierarchy
+obj = ListHierarchy()
+obj.add("apple")
+obj.add("date")
+obj.add("grape")
+obj.add("lettuce")
+obj.add("orange")
+obj.add("pepper")
+obj.add("salt")
+obj.add("tea")
+obj.print()
